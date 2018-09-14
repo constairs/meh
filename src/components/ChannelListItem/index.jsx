@@ -50,11 +50,11 @@ export class ChannelListItem extends React.Component {
   };
 
   render() {
-    const { channelItem } = this.props;
+    const { channelItem, isCurrent } = this.props;
     const { usersToInvite, usersIdsInput, inviteForm } = this.state;
     return (
       <li>
-        <button className={channelItem.customType ? 'channel-list-item custom-type' : 'channel-list-item'} onClick={this.handleItemClick}>
+        <button className={isCurrent ? 'channel-list-item active' : 'channel-list-item'} onClick={this.handleItemClick}>
           <div className="channel-info">
             <span className="img">
               <img
@@ -125,5 +125,6 @@ ChannelListItem.propTypes = {
   selectedChan: PropTypes.func.isRequired,
   onLeave: PropTypes.func.isRequired,
   onInviteUsers: PropTypes.func.isRequired,
-  channelItem: PropTypes.objectOf(PropTypes.any).isRequired
+  channelItem: PropTypes.objectOf(PropTypes.any).isRequired,
+  isCurrent: PropTypes.bool.isRequired
 };

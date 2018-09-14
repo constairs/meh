@@ -33,19 +33,22 @@ body {
 }
 
 .channel-page {
+  padding: 0;
   .channel-sidebar {
     width: 30%;
     transition: .2s;
-    height: calc(100vh - 172px);
+    height: calc(100vh - 130px);
     overflow-y: scroll;
     margin-right: 20px;
     padding-right: 10px;
+    padding-left: 30px;
     &.min {
       width: 35%;
     }
   }
   .channel-page-content {
     width: 70%;
+    padding-right: 30px;
   }
 }
 .lazy-load-container {

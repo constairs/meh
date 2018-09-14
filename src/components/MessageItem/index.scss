@@ -18,6 +18,7 @@
   display: flex;
   align-items: center;
   padding: 20px 15px;
+  background-color: #dddddd;
   border-bottom: 1px solid #cacaca;
   position: relative;
   p {
@@ -37,7 +38,7 @@
   }
   .x-btn, .edit-btn {
     padding: 0 5px;
-    color: #cacaca;
+    color: #c0c0c0;
     background-color: transparent;
     position: absolute;
     top: 10px;

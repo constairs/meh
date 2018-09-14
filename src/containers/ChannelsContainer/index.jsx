@@ -95,6 +95,7 @@ class Channels extends React.Component {
                   selectedChan={this.handleGetChannel}
                   channels={openChannelList}
                   channelsFetching={channelsFetching}
+                  current={channel ? channel.url : null}
                 />
               </div>
             ) : null}
@@ -112,6 +113,7 @@ class Channels extends React.Component {
                   channels={groupChannelList}
                   channelsFetching={channelsFetching}
                   inviteUsers={this.handleInviteUsers}
+                  current={channel ? channel.url : null}
                 />
               </div>
             ) : null}

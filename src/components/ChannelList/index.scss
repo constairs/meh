@@ -34,7 +34,7 @@
   }
   > li {
     margin-bottom: 5px;
-    background-color: #ececec;
+    background-color: #dddddd;
     border: none;
     border-radius: 3px;
     font-size: 16px;
@@ -45,9 +45,13 @@
       height: 100%;
       width: 100%;
       color: #000000;
-      &.custom-type {
+      &.active {
         background-color: $brand-color;
         color: #ffffff;
+        &:hover {
+          background-color: darken($brand-color, 6%);
+          color: #ffffff;
+        }
       }
       .channel-info {
         display: flex;

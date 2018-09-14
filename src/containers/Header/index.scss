@@ -1,12 +1,13 @@
 @import '../../assets/scss/variables';
 
 header {
-  background-color: $light;
+  background-color: #cccccc;
   display: block;
   padding: 5px 40px;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin-bottom: 40px;
   .user-cover {
     width: 50px;
     button {
